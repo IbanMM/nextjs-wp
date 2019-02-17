@@ -1,10 +1,10 @@
 import './menu.scss'
-import icon from '../../static/svg.svg?sprite';
+import icon from '../../svg/logo-veiss.svg?sprite';
 
 export default () => (
     <div className="container main-menu">
-        <svg viewBox={icon.viewBox}>
-            <use xlinkHref="#svg--sprite_logo-veiss" />
+        <svg>
+            <use xlinkHref={`#${icon.id}`} />
         </svg>
     </div>
 )
