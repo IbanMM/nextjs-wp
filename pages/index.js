@@ -4,7 +4,7 @@ const {publicRuntimeConfig} = getConfig()
 import "../sass/index.scss"
 //import Link from 'next/link'
 import Link from 'data-prefetch-link'
-import fetch from 'isomorphic-unfetch';
+import fetch from 'isomorphic-unfetch'
 import Picture from '../components/picture/picture.js'
 
 const Index = ({ posts }) =>
