@@ -19,7 +19,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head>{/* your head if needed */}</Head>
+        <Head>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet" /> 
+        </Head>
         <body>
           <div dangerouslySetInnerHTML={{ __html: this.props.spriteContent }} />
           <Main />

@@ -2,7 +2,7 @@ import getConfig from 'next/config'
 const {publicRuntimeConfig} = getConfig()
 
 import "../sass/posts.scss"
-import fetch from 'isomorphic-unfetch';
+import fetch from 'isomorphic-unfetch'
 
 const Post = ({ post }) =>
   <div>

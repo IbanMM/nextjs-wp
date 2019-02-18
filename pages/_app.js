@@ -3,6 +3,7 @@ import App, { Container } from 'next/app'
 import Head from 'next/head';
 
 import Menu from '../components/menu/menu'
+import "../static/app.css"
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -22,9 +23,6 @@ export default class MyApp extends App {
       <div>
       <Menu />
       <Container>
-        <Head>
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet" /> 
-        </Head>
         <Component {...pageProps} />
       </Container>
       </div>
