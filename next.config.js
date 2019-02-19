@@ -1,5 +1,6 @@
 const withPlugins = require('next-compose-plugins');
 const withSass = require('@zeit/next-sass')
+const withCSS = require('@zeit/next-css')
 const optimizedImages = require('next-optimized-images')
 
 module.exports = withPlugins([
@@ -10,7 +11,8 @@ module.exports = withPlugins([
         publicRuntimeConfig: { // Disponible en servidor y cliente
             API: 'https://www.leihoa.eus//wp-json/wp/v2/'
         }
-    }]
+    }],
+    [withCSS]
   ]);
     
 

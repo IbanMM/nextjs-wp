@@ -2,7 +2,6 @@ import getConfig from 'next/config'
 const {publicRuntimeConfig} = getConfig()
 
 import "../sass/index.scss"
-import "../sass/posts.scss"
 //import Link from 'next/link'
 import Link from 'data-prefetch-link'
 import fetch from 'isomorphic-unfetch'
